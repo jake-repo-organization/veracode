@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set a Delay
-        run: sleep $(( RANDOM % 3600 ))
+        run: sleep $(( RANDOM % 10 ))
       - name: Dispatch Sync Event
         uses: actions/github-script@v5
         with:
